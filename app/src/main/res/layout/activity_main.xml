@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pass_gen"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/annotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:fontFamily="serif"
+        android:textAlignment="center"
+        android:text="Generate Your Password!"
+        android:textColor="#fffffb"
+        android:textSize="50dp"
+        android:textStyle="bold|italic"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/passField"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gradient_text_view"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:text="Здесь будет пароль"
+        android:textSize="30dp"
+        android:onClick="copyInBuffer"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/copyButton"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginBottom="16dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:gravity="center"-->
+<!--        android:background="@drawable/gradient"-->
+<!--        android:onClick="copyInBuffer"-->
+<!--        />-->
+
+    <Button
+        android:id="@+id/generateButton"
+        android:text="Generate!"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passField"
+        android:onClick="generatePassword"
+        />
+
+
+</RelativeLayout>
